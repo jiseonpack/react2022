@@ -1,0 +1,59 @@
+//about__cont
+.about__cont {}
+.about__inner {
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 24vh;
+
+        p {
+            line-height: 1.6;
+        }
+    }
+    .about:nth-child(1){
+        .about__img {
+            flex: 0 0 100%;
+        }
+
+        .about__txt {
+            flex: 0 0 70%;
+        }
+        h3 {
+            margin: 1vh 0;
+        }
+    }
+    .about:nth-child(2){
+        flex-direction: row;
+        .about__img {
+            flex: 0 0 65%;
+        }
+
+        .about__txt {
+            flex: 0 0 34%;
+        }
+        p {
+            margin: 1vh 0;
+        }
+    }
+    .about:nth-child(3){
+        flex-direction:row-reverse;
+        .about__img {
+            flex: 0 0 60%;
+        }
+
+        .about__txt {
+            flex: 0 0 39%;
+        }
+        p {
+            margin: 1vh 0;
+        }
+    }
+}
+// 라이트 버전
+.about__cont .light {
+    background-color: var(--light_bg);
+    border-color: var(--light_border);
+    
+}
